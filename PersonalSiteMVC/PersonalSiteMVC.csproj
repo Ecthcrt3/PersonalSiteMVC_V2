@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\.gitignore" />
     <Content Remove="wwwroot\assets\900px-HackerRank_Icon-1000px.png" />
     <Content Remove="wwwroot\assets\bootstrap.png" />
     <Content Remove="wwwroot\assets\Chanel-Dubreuil-profile.jpg" />
@@ -33,7 +32,6 @@
     <Content Remove="wwwroot\css\vendor\vapor.min.css" />
     <Content Remove="wwwroot\css\vendor\yeti.min.css" />
     <Content Remove="wwwroot\GC-Favicon.ico" />
-    <Content Remove="wwwroot\index.html" />
     <Content Remove="wwwroot\js\main.js" />
     <Content Remove="wwwroot\js\vendor\bootstrap.min.js" />
     <Content Remove="wwwroot\js\vendor\jquery-3.6.0.min.js" />
@@ -52,7 +50,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="wwwroot\.gitignore" />
     <None Include="wwwroot\.git\COMMIT_EDITMSG" />
     <None Include="wwwroot\.git\config" />
     <None Include="wwwroot\.git\description" />
@@ -176,7 +173,6 @@
     <None Include="wwwroot\css\vendor\vapor.min.css" />
     <None Include="wwwroot\css\vendor\yeti.min.css" />
     <None Include="wwwroot\GC-Favicon.ico" />
-    <None Include="wwwroot\index.html" />
     <None Include="wwwroot\js\main.js" />
     <None Include="wwwroot\js\vendor\bootstrap.min.js" />
     <None Include="wwwroot\js\vendor\jquery-3.6.0.min.js" />
