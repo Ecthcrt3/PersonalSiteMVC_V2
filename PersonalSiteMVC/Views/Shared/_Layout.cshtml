@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio site to show display Coding capabilities" />
+    <meta name="author" content="Gene Cathcart" />
+
+    <!-- link to favicon -->
+    <link rel="icon" type="image/x-icon" href="GC-Favicon.ico" />
+
+    <!-- Bootstrap stylesheet -->
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css" />
+
+    <!-- jQuery Beefup Stylesheet -->
+    <link rel="stylesheet" href="/css/vendor/jquery.beefup.css" />
+
+    <!-- Bootstrap Icon CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css" />
+
+    <!-- Bootswatch themed stylesheet from https://bootswatch.com -->
+    <link rel="stylesheet" href="css/vendor/yeti.min.css" id="theme" />
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top justify-content-evenly ">
+        <a href="/" class="navbar-brand">Gene Cathcart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">&#9776;</button>
+
+        <div class="collapse navbar-collapse justify-content-evenly text-center" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#resume" class="nav-link">Resume</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">Links</a>
+                    <div class="dropdown-menu">
+                        <a href="#classmates" class="dropdown-item">Centriq Classmates</a>
+                        <a href="#code" class="dropdown-item">Coding Help</a>
+                        <!-- <a href="#resources" class="dropdown-item">Useful Resources</a> -->
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+
+        <div>
+            <a href="https://github.com/Ecthcrt3" target="_blank" rel="noreferrer"><i class="bi bi-github navbar-brand"></i></a>
+            <a href="https://www.linkedin.com/in/genecathcart/" target="_blank" rel="noreferrer"><i class="bi bi-linkedin navbar-brand"></i></a>
+        </div>
+    </nav>
+
+    @RenderBody();
+
+    <!-- jQuery Base Library -->
+    <script src="/js/vendor/jquery-3.6.0.min.js"></script>
+
+    <!-- jQuery Beefup JS -->
+    <script src="/js/vendor/jquery.beefup.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <!-- link to main.js -->
+    <script src="js/main.js"></script>
+
+    <script>
+        if("@ViewBag.ErrorMessage" == true){
+        var error = "@ViewBag.ErrorMessage";
+        alert(error);
+        }
+        else if("@ViewBag.Message" == true){
+            var success = "@ViewBag.Message";
+            alert(success);
+        }
+        else if("@ViewBag.Scroll" == true){
+            var scroll = document.getElementById("contact");
+            scroll.scrollIntoView();
+        }
+    </script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
