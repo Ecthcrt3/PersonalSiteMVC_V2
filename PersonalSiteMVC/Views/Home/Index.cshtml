@@ -4,8 +4,9 @@
 
 
 <main>
-    <div class="p-4">
-        <div class="sectionContainer my-5" id="about">
+    <div class="p-4 pageContainer">
+        <br id="about"/>
+        <div class="sectionContainer my-5">
             <section class="m-2 row justify-content-center">
                 <h1>About</h1>
                 <hr />
@@ -341,15 +342,15 @@
 
                 <h1>Contact Me</h1>
                 <hr />
+                    <h2>
+                    @ViewBag.ErrorMessage
+                    </h2>
+                    <hr />
 
-                @if (ViewBag.ErrorMessage != null)
-                {
-                    <div class="row">
-                        <p style="color: red; font-style: italic;">
-                            @Html.Raw(ViewBag.ErrorMessage)
-                        </p>
-                    </div>
-                }
+
+                <div class="text-center">
+                </div>
+
                 <div class="row">
 
                     @Html.Partial("_Contact")
@@ -357,6 +358,8 @@
                 </div>
             </secition>
         </div>
+        
+        <br />
 
         <div class="sectionContainer my-5">
             <h1>What is the next Holiday?</h1>

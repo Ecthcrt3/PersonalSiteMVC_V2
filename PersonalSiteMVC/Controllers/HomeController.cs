@@ -28,10 +28,12 @@ namespace PersonalSiteMVC.Controllers
         {
             if (!ModelState.IsValid)
             {
+                
                 ViewBag.Scroll = true;
+                ViewBag.ErrorMessage = "Required Items are missing from the form!";
                 return View(cvm);
             }
-
+            ViewBag.Submit = true;
             var mm = new MimeMessage();
 
             string message = $"You have received a new email from your site's contact form!<br/>" +
@@ -65,13 +67,11 @@ namespace PersonalSiteMVC.Controllers
                 catch (Exception ex)
                 {
                     ViewBag.ErrorMessage = $"There was an error processing your request.  Please try again later.<br/> Error Message: {ex.StackTrace}";
-
                     return View(cvm);
                 }
             }
-            ViewBag.Message = $"Your Message was successfully sent at {DateTime.Now.ToShortTimeString} on {DateTime.Now.ToShortDateString}";
             ModelState.Clear();
-            return View();
+            return RedirectToAction("ContactConfirmation", cvm);
         }
 
 

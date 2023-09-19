@@ -49,7 +49,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contact</a>
                 </li>
             </ul>
         </div>
@@ -75,18 +75,13 @@
     <script src="js/main.js"></script>
 
     <script>
-        if("@ViewBag.ErrorMessage" == true){
-        var error = "@ViewBag.ErrorMessage";
-        alert(error);
+        $( document ).ready(function() {
+         if("@ViewBag.Scroll" == "True"){
+             const element = document.getElementById('contact');
+             const y = element.getBoundingClientRect().top + window.pageYOffset - 100;
+             window.scrollTo({top: y, behavior: 'smooth'});
         }
-        else if("@ViewBag.Message" == true){
-            var success = "@ViewBag.Message";
-            alert(success);
-        }
-        else if("@ViewBag.Scroll" == true){
-            var scroll = document.getElementById("contact");
-            scroll.scrollIntoView();
-        }
+});
     </script>
 
     @RenderSection("scripts", required: false)
