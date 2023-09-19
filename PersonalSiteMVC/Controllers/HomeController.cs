@@ -71,7 +71,7 @@ namespace PersonalSiteMVC.Controllers
                 }
             }
             ModelState.Clear();
-            return RedirectToAction("ContactConfirmation", cvm);
+            return View("ContactConfirmation", cvm);
         }
 
 

@@ -2,4 +2,21 @@
     ViewData["Title"] = "Confirmation";
 }
 
-<h1>YAY</h1>
+<main>
+    <div class="p-4 pageContainer">
+        <div class="sectionContainer my-5">
+            <section class="m-2 row justify-content-center">
+                <h1>Message Sent Successfully!</h1>
+                <hr />
+                <p>
+                    Your Message was successfully sent at @DateTime.Now.ToShortTimeString() on @DateTime.Now.ToShortDateString()
+                </p>
+
+
+
+                <a class="btn btn-dark" href="@Url.Action("Index", "Home")">Back To Site</a>
+            </section>
+        </div>
+
+    </div>
+</main>
