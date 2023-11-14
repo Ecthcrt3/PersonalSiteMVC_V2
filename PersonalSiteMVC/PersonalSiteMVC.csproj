@@ -8,34 +8,14 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Remove="wwwroot\assets\900px-HackerRank_Icon-1000px.png" />
-    <Content Remove="wwwroot\assets\bootstrap.png" />
-    <Content Remove="wwwroot\assets\Chanel-Dubreuil-profile.jpg" />
-    <Content Remove="wwwroot\assets\Colson-Donner-Profile.jpg" />
-    <Content Remove="wwwroot\assets\Corbin-Brown-Profile.jpg" />
-    <Content Remove="wwwroot\assets\Gene.jpg" />
-    <Content Remove="wwwroot\assets\GeneCathcartResumeIT.pdf" />
-    <Content Remove="wwwroot\assets\pngfind.com-under-construction-png-79122.png" />
-    <Content Remove="wwwroot\assets\Robert-Eyre-Profile.jpg" />
-    <Content Remove="wwwroot\assets\technology-background-1632715.jpg" />
-    <Content Remove="wwwroot\assets\W3Schools_logo.png" />
-    <Content Remove="wwwroot\assets\William-Watts-Profile.jpg" />
-    <Content Remove="wwwroot\assets\Zoey-Bateman-Profile.jpg" />
-    <Content Remove="wwwroot\css\custom.css" />
-    <Content Remove="wwwroot\css\vendor\bootstrap.min.css" />
-    <Content Remove="wwwroot\css\vendor\cyborg.min.css" />
-    <Content Remove="wwwroot\css\vendor\journal.min.css" />
-    <Content Remove="wwwroot\css\vendor\jquery.beefup.css" />
-    <Content Remove="wwwroot\css\vendor\lux.min.css" />
-    <Content Remove="wwwroot\css\vendor\simplex.min.css" />
-    <Content Remove="wwwroot\css\vendor\solar.min.css" />
-    <Content Remove="wwwroot\css\vendor\vapor.min.css" />
-    <Content Remove="wwwroot\css\vendor\yeti.min.css" />
-    <Content Remove="wwwroot\GC-Favicon.ico" />
-    <Content Remove="wwwroot\js\main.js" />
-    <Content Remove="wwwroot\js\vendor\bootstrap.min.js" />
-    <Content Remove="wwwroot\js\vendor\jquery-3.6.0.min.js" />
-    <Content Remove="wwwroot\js\vendor\jquery.beefup.js" />
+    <None Remove="wwwroot\assets\aidanmcquillan.jpg" />
+    <None Remove="wwwroot\assets\AlexDavenport.jpg" />
+    <None Remove="wwwroot\assets\alexerdrich.jpg" />
+    <None Remove="wwwroot\assets\Aliciavillegas.jpg" />
+    <None Remove="wwwroot\assets\chrisrandall.jpg" />
+    <None Remove="wwwroot\assets\DanAmbro.jpg" />
+    <None Remove="wwwroot\assets\paul_profile.JPG" />
+    <None Remove="wwwroot\css\custom.css" />
   </ItemGroup>
 
   <ItemGroup>
@@ -162,7 +142,6 @@
     <None Include="wwwroot\assets\W3Schools_logo.png" />
     <None Include="wwwroot\assets\William-Watts-Profile.jpg" />
     <None Include="wwwroot\assets\Zoey-Bateman-Profile.jpg" />
-    <None Include="wwwroot\css\custom.css" />
     <None Include="wwwroot\css\vendor\bootstrap.min.css" />
     <None Include="wwwroot\css\vendor\cyborg.min.css" />
     <None Include="wwwroot\css\vendor\journal.min.css" />
