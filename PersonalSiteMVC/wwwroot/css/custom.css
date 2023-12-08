@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+}
+
+
+body {
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+}
+
+main {
+    background-image: url('/assets/technology-background-1632715.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.sectionContainer {
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(237, 233, 233, 0.9);
+    border-radius: 20px;
+    min-height: 30vh;
+    position: relative;
+}
+
+.sectionImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.sectionImage img {
+    border-radius: 20px;
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.sectionText {
+    display: flex;
+    vertical-align: middle;
+}
+
+.sectionContainer iframe{
+    height: 90vh;
+}
+
+.btn {
+    margin: 5px;
+    border-radius: 10px;
+}
+
+
+
+.construction {
+    width: 65%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card.classmates{
+    flex-direction: row;
+    border-radius: 15px;
+    padding: 0;
+    margin: 5px;
+}
+
+.card-title {
+    font-size: 2em;
+}
+
+.cardLink{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: black;
+}
+
+.card-img-left {
+    width: 35%;
+    min-height: 100%;
+    border-radius: 15px 0px 0px 15px;
+    max-block-size: 200px;
+}
+
+.card {
+    border-radius: 15px;
+    margin: 5px;
+}
+
+
+
